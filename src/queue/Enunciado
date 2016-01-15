@@ -1,0 +1,6 @@
+1. Simular el buffer de una impresora teniendo en cuenta lo siguiente:
+
+Cada peticion de impresión tiene una prioridad (baja,media,Alta) que proviene de una clase enum.
+En caso de que dos peticiones tenga la misma prioridad tendrá preferencia la primera peticion que llegó al buffer.
+
+La peticion, además de la prioridad, debe tener la descripcion, fecha de la solicitud y usuario que lo ordenó.

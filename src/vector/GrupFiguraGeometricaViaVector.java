@@ -81,11 +81,11 @@ public class GrupFiguraGeometricaViaVector {
     }
 
     public void ordenarPerCodi() {
-        Collections.sort(v);
+      //  Collections.sort(v);
     }
 
     public void ordenarPerArea() {
-        Collections.sort(v,new FiguraGeometrica02.ComparatorFiguraGeometricaSegonsArea());
+       // Collections.sort(v,new FiguraGeometrica02.ComparatorFiguraGeometricaSegonsArea());
     }
 
     public boolean equals(Object obj) {
@@ -110,4 +110,5 @@ public class GrupFiguraGeometricaViaVector {
         // És clar que si dos grups són iguals (conjunt d'elements iguals), amb aquesta implementació de hashCode()
         // també tindran el mateix hashCode(), tal i com ha de ser.
     }
+
 }
