@@ -4,7 +4,10 @@ import java.util.*;
  * Created by shengbin on 2016/1/18.
  */
 public class Impresora {
+
     public static void main(String[] args) {
+
+
         PriorityQueue<Peticion> pq = new PriorityQueue<Peticion>(10, new OrdenarPorPrioridad());
 
         Peticion i;
@@ -32,8 +35,6 @@ public class Impresora {
         System.out.println("Usuario : "+pq.peek().usuario+"\n Descripción ; "+pq.peek().descripcion+"\n Fecha de solicitud : " +pq.poll().fecha_solicitud+"\n");
         System.out.println("Usuario : "+pq.peek().usuario+"\n Descripción ; "+pq.peek().descripcion+"\n Fecha de solicitud : " +pq.poll().fecha_solicitud+"\n");
         System.out.println("Usuario : "+pq.peek().usuario+"\n Descripción ; "+pq.peek().descripcion+"\n Fecha de solicitud : " +pq.poll().fecha_solicitud+"\n");
-
-
         pq.clear();
 
     }

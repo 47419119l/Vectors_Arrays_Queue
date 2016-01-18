@@ -8,7 +8,11 @@ import java.util.Comparator;
 public class OrdenarPorPrioridad implements Comparator<Peticion>{
     @Override
     public int compare(Peticion o1, Peticion o2) {
-
-        return o2.prioridadint - o1.prioridadint;
+        if(o2.prioridadint != o1.prioridadint) {
+            return o2.prioridadint - o1.prioridadint;
+        }else{
+            // fer funcio per verue quina data es la anterior.
+            return o2.prioridadint +1;
+        }
     }
 }
