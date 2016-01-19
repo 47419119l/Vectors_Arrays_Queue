@@ -6,6 +6,7 @@ import java.util.Vector;
 
 /**
  * Created by shengbin on 2016/1/19.
+ * afegir, cercar per codi, extreure, veure quina figura hi ha en una posició determinada, buidar el grup
  */
 public class GrupOrdenatFiguraGeometricaViaVector {
      Vector<FiguraGeometrica02> v;
@@ -17,23 +18,11 @@ public class GrupOrdenatFiguraGeometricaViaVector {
     public GrupOrdenatFiguraGeometricaViaVector()   {
 
     }
-
-    public int getCapacitat()   {
-        return v.capacity();
-    }
-
-    public int getSize()   {
-        return v.size();
-
-    }
     public int afegir(FiguraGeometrica02 figura)
     {
         v.add(figura);
         return -1;
     }
-
-
-
 
     public FiguraGeometrica02 retornaPosicio(int i)   {
         return v.get(i);
